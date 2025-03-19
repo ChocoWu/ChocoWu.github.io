@@ -3,17 +3,126 @@
 <html>
 
 <head>
-  <meta name=viewport content="width=800">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta name="description" content="ShengqiongWu's homepage">
+  <meta name="keywords" content="Shengqiong Wu, NUS, NExT++, Tat-Seng Chua">
+  <meta name="author" content="Shengqiong Wu">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en">
+  <link rel="icon" type="image/png" href="images/wsq.png">
+  <title>Shengqiong Wu</title>
   <style type="text/css">
     /* Color scheme stolen from Sergey Karayev */
     /*Codes for this website are borrowed from https://zexuehe.github.io/*/
-    
-    a {
+
+    .navbar-text > a {
+            color: inherit;
+            text-decoration: none;
+            color: rgb(49, 49, 49);
+        }
+
+        .white_bg {
+            background-color: rgba(0, 0, 0, 0.25);
+            padding: 3px;
+        }
+
+        .blue_bg {
+            background-color: rgba(255, 136, 1, 0.705);
+            padding: 3px;
+        }
+
+        .line2 {
+            margin: 5px 0;
+            height: 2px;
+            background: repeating-linear-gradient(to right, black 0, black 10px, transparent 10px, transparent 12px)
+            /*10px red then 2px transparent -> repeat this!*/
+        }
+
+        .bordered, .hover2, xximg:hover {
+            border-color: #AAAAAA;
+            border-style: solid;
+            border-width: 1px;
+            border-collapse: separate /* otherwise does not work in IE inside tables */;
+        }
+
+        .hover2 {
+            -webkit-box-shadow: 2px 2px 2px rgba(, , 120, 0.6);
+            -moz-box-shadow: 2px 2px 2px rgba(, , 120, 0.6);
+            -o-box-shadow: 2px 2px 2px rgba(, , 120, 0.6);
+            box-shadow: 0px 0px 10px rgba(, , 120, 0.6);
+        }
+
+        figure figcaption {
+            text-align: center;
+            margin: 10px;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 0px;
+        }
+
+        figure img {
+            vertical-align: top;
+            border: 1px solid #ddd;
+            border-radius: 0px;
+            padding: 0px;
+        }
+
+        figure img:hover {
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            -webkit-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 1);
+            box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 1);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        .content {
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white; */
+            z-index: 2; /* Higher than overlay */
+            font-family:  'Poppins', sans-serif;
+        }
+        .navbar-dark .navbar-brand  {
+            /* font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            font-weight: 700; */
+            color: rgb(46, 46, 46);
+        }
+
+    li::marker {
+    font-size: 1.2em;
+    }
+
+    ul li{
+      height: 50;
+    }
+    ul {
+      padding-left: 40px;
+    }
+    /* a {
       color: #1772d0;
       text-decoration: none;
-    }
+    } */
     
     a:focus,
     a:hover {
@@ -79,343 +188,457 @@
     span.highlight {
       background-color: #ffffd0;
     }
-
-
-    li::marker {
-    font-size: 1.2em;
-    }
-
-    ul li{
-      height: 30;
-    }
   </style>
-  <link rel="icon" type="image/png" href="images/wsq.png">
-  <title>Shengqiong Wu</title>
+
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
-<body>
-  <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="70%" valign="middle">
-              <p align="center">
-                <name>Shengqiong Wu</name>
-              </p>
-              <p>I am currently a second-year Ph.D. student at <a href="https://www.nextcenter.org/">NExT++</a> Research Center, advised by Prof. <a href="https://www.chuatatseng.com/">Tat-Seng Chua</a> in <a href="https://www.comp.nus.edu.sg">School of Computing</a> at <a href="https://www.nus.edu.sg">National University of Singapore</a>, after I obtained my M.S. and Bachelor degrees from <a href="https://www.whu.edu.cn/">Wuhan University</a>.
-              </p>
-              <p>
-                My research interest mainly lies in <strong>Scene Graph-based Vision-Language Understanding</strong>, with the contexts of <strong>Multimodal Large Language Models</strong> and <strong>Diffusion Model</strong>, etc.
-                Previously, I focused on syntax-aided NLP, i.e., employing external syntactic and linguistic representation to aid NLP tasks.
-              </p> 
-              
-              <p align=center>
-                <a href="mailto:swu@u.nus.edu">Email</a> &nbsp/&nbsp
-                <a href="https://github.com/ChocoWu">Github</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=RJJLKR0AAAAJ">Google Scholar</a>
-<!--                &nbsp/&nbsp-->
-<!--                 <a href="data/CV_wsq.pdf">CV</a> &nbsp -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark blue_bg fixed-top" id="mainNav">
+  <div class="container">
+      <div class="navbar-header">
+          <!-- <a class="navbar-brand js-scroll-trigger" href="#">
+              SSNLP 2025
+          </a> -->
+          <a class="navbar-brand js-scroll-trigger" href="https://sqwu.top/">
+              Homepage
+          </a>
+      </div>
+      <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#news">News</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#internships">Internships</a>
+              </li>
+              <li class="nav-item">  
+                  <a class="nav-link js-scroll-trigger" href="#awards">Honors and Awards</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#talks">Talks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#misc" style="gap: 10px;">MISC</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<body id="page-top">
+
+
+<!-- <header>
+  <div></div>
+  </div>
+</header>  -->
+
+
+<section id="header">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="container-table100">
+              <div class="wrap-table100">
+                  <table  width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(252, 250, 247, 0.878);">
+                        <tr>
+                            <td width="70%" valign="middle">
+                              <h1 style="color: #ff8800; font-family: 'Exo 2', sans-serif;" >Shengqiong Wu</h1> <br>
+                              Ph.D. Candidate <br>
+                              NExT++ Research Center<br>
+                              National University of Singapore<br>
+                              <a href="mailto:sqwu@u.nus.edu">
+                                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 24px;"></i>
+                              </a>
+                              <a href="https://scholar.google.com/citations?user=RJJLKR0AAAAJ">
+                                <i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 24px;"></i>
+                              </a>
+                              <a href="https://github.com/ChocoWu">
+                                <i class="fa fa-github" aria-hidden="true" style="font-size: 24px;"></i>
+                              </a>
+                              <a href="https://twitter.com/SQWU_Tori"> <i class="fa fa-twitter-square" style="font-size: 24px;"></i></a>
+                            </td>
+                            <td width="30%">
+                              <img src="images/ME.jpg" width="80%" style="margin-top: 46px; box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);">
+                            </td>
+                        </tr>
+                  </table>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<section id="about">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="section_title">
+              <h2 class="title">About Me</h2>
+          </div>
+
+            <p>I am currently a third-year Ph.D. student at <a href="https://www.nextcenter.org/">NExT++</a> Research Center, advised by Prof. <a href="https://www.chuatatseng.com/">Tat-Seng Chua</a> in <a href="https://www.comp.nus.edu.sg">School of Computing</a> at <a href="https://www.nus.edu.sg">National University of Singapore</a>, after I obtained my M.S. and Bachelor degrees from <a href="https://www.whu.edu.cn/">Wuhan University</a>.
+            </p>
+            <p>
+              My research interest mainly lies in <strong>Scene Graph-based Vision-Language Understanding</strong>, with the contexts of <strong>Multimodal Large Language Models</strong> and <strong>Diffusion Model</strong>, etc.
+              Previously, I focused on syntax-aided NLP, i.e., employing external syntactic and linguistic representation to aid NLP tasks.
+            </p> 
+          </div>
+      </div>
+  </div>
+</section>
+
                 
-              </p>
-            </td>
-            <td width="30%">
-              <img src="images/ME.jpg" width="80%" style="box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);">
-            </td>
-          </tr>
-        </table>
-
-      <!-- NEWs -->
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(246, 249, 253, 0.878);">
-        <tr>
-          <td width="100%" valign="middle">
-            <heading>🔥News🔥</heading><br>
-            <li> <span style="color: red;">[NEW!-2024/12]</span> 🥳 I maintain a github repo focusing on  <a href="https://github.com/ChocoWu/Awesome-Scene-Graph-Generation">Awesome-Scene-Graph-Generation-and-Application</a>. Welcome to check it out, contribute, and share any resources or insights related to scene graph generation!</li>
-            <li> <span style="color: red;">[NEW!-2024/12]</span> <a href="https://arxiv.org/abs/2412.11124">One paper</a> focusing on mitigating hallucination in MLLMs is accepted by AAAI-25!</li>
-            <li> <span style="color: red;">[NEW!-2024/08]</span> 🐾I’m excited to have the opportunity to be a <em>volunteer</em> at ACL 2024. Looking forward to being part of it!</li>
-            <li> <span style="color: red;">[NEW!-2024/08]</span> I have tried to build <a href="https://aistudio.baidu.com/projectdetail/8168280">NExT-GPT</a> in <a href="https://www.paddlepaddle.org.cn/">PaddlePaddle</a>, <a href="https://github.com/PaddlePaddle/PaddleNLP">PaddleNLP</a> and <a href="https://github.com/PaddlePaddle/PaddleMIX/tree/release/2.0/ppdiffusers">PPDiffusers</a>. Still working on it. 🤔🤔</li>
-            <li> <span style="color: red;">[NEW!-2024/05]</span> Congratulations! 🥳🥳🥳, two full papers are accpted in ICML-24, <a href="">NExT-GPT</a>  and  <a href="">Video-of-Thought</a> .</li>
-            <li> <span style="color: red;">[NEW!-2024/04]</span> We release Vitron (<a href="https://vitron-llm.github.io/">Demo</a>, <a href="http://haofei.vip/downloads/papers/Skywork_Vitron_2024.pdf">Paper</a> , <a href="https://github.com/SkyworkAI/Vitron">Code</a>), a universal pixel-level vision LLM designed for understanding, generating, segmenting, editing of both image and video. 🌟🌟</li>
-            <li> <span style="color: red;">[NEW!-2024/02]</span> One full paper is accepted by CVPR-24 about <a href="https://haofei.vip/Dysen-VDM/">Text-to-Video Generation</a>. Congrats to all my co-authors. </li>
-            <li> <span style="color: red;">[NEW!-2024/01]</span> I honor Baidu Scholarship (10 people worldwide). 🥳🥳🥳 </li>
-            <li> <span style="color: red;">[NEW!-2023/12]</span> I have successfully passed my Rearcsh-based QE, I am now a Ph.D. Candidate. 🥳🥳🥳  </li>
-            <li> <span style="color: red;">[NEW!-2023/11]</span> I'll join <a href="">Kunlun 2050 Research</a>  as a research intern, advised by <a href="https://yanshuicheng.info/">Prof. Yan</a>. 😆 </li>
-            <li> <span style="color: red;">[NEW!-2023/10]</span> We build <a href="https://next-gpt.github.io/">NExT-GPT</a>, a general-purpose any-to-any MLLM. 🌟 </li>
-            <li> <span style="color: red;">[NEW!-2023/09]</span> One full paper is accepted in <a href="https://neurips.cc/Conferences/2023">NeurIPS-23</a>, about <a href="https://openreview.net/pdf?id=hSTaTBIUCj">Intricate Text-to-image Generation</a>  based on Scene Graph. 🥳</li>
-            <li> <span style="color: red;">[NEW!-2023/07]</span> One full paper is accepted in <a href="https://www.acmmm2023.org/">ACM MM-23</a>, about <a href="https://arxiv.org/pdf/2308.05095.pdf">High-faithfull Text-to-image Generation</a> enhanced with layout.</li>
-            <li> <span style="color: red;">[NEW!-2023/05]</span> Two full papers is accepted in <a href='https://2023.aclweb.org/'>ACL-23</a>, about <a href='https://aclanthology.org/2023.acl-long.823.pdf'>Multimodal Relation Extraction</a> and <a href='https://aclanthology.org/2023.acl-long.146.pdf'>Image Captioning.</a></li>
-            <li> <span style="color: red;">[NEW!-2022/07]</span> I'm heading to <a href="https://www.comp.nus.edu.sg/">SoC NUS</a> to pursue my PhD—a new journey and fresh challenges await! 🙃</a></li>
-          </td>
-        </tr>
-      </table>
-
-      <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
-      
-        <!-- research -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Publications</heading>
-              
-            </td>
-          </tr>
-        </table>
-
-        <!-- cellpadding="20" -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-            <tbody>
-              <tr>
-                <td width="100%"><strong>2025</strong></td>
-              </tr>
-              <tr>
-                <td width="100%">
-                  <ul>
-                    <li>
-                      <strong>Shengqiong Wu</strong>, Hao Fei, Liangming Pan, William Yang Wang, Shuicheng Yan, Tat-Seng Chua.&nbsp&nbsp<em>Combating Multimodal LLM Hallucination via Bottom-up Holistic Reasoning</em>. In Proceedings of <strong>AAAI</strong>. 2025.&nbsp&nbsp <a href="https://arxiv.org/abs/2412.11124">[pdf]</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              
-              <tr>
-                <td width="100%"><strong>2024</strong></td>
-              </tr>
-              <tr>
-                <td width="100%">
-                  <ul>
-                    <li>
-                      <strong>Shengqiong Wu</strong>, Hao Fei, Xiangtai Li, Jiayi Ji, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan.&nbsp&nbsp<em>Towards Semantic Equivalence of Tokenization in Multimodal LLM</em>. <strong>arXiv</strong>. 2024.&nbsp&nbsp<a href="https://chocowu.github.io/SeTok-web/">[Code]</a><a href="https://arxiv.org/pdf/2406.05127">[pdf]</a>
-                    <li>
-                      Hao Fei, <strong>Shengqiong Wu</strong>, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan.&nbsp&nbsp<em>VITRON: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing</em>. In Proceedings of <strong>NeurIPS</strong>. 2024.&nbsp&nbsp<a href="https://vitron-llm.github.io/">[Code]</a><a href="https://haofei.vip/downloads/papers/Skywork_Vitron_2024.pdf">[pdf]</a>
-                    
-                    <li>
-                      Meng Luo, Hao Fei*, Bobo Li, <strong>Shengqiong Wu</strong>, Qian Liu, Soujanya Poria, Erik Cambria, Mong-Li Lee, Wynne Hsu.&nbsp&nbsp<em>PanoSent: A Panoptic Sextuple Extraction Benchmark for Multimodal Conversational Aspect-based Sentiment Analysis</em>. In Proceedings of <strong>ACM MM</strong>. 2024.&nbsp&nbsp (Oral).<a href="https://panosent.github.io/">[Code]</a><a href="https://www.arxiv.org/pdf/2408.09481">[pdf]</a>
-                    </li>
-                    <li>
-                      <strong>Shengqiong Wu</strong>, Hao Fei, Leigang Qu, Wei Ji, Tat-Seng Chua.&nbsp&nbsp<em>NExT-GPT: Any-to-Any Multimodal Large Language Model</em>. In Proceedings of <strong>ICML</strong>. 2024.&nbsp&nbsp (Oral) <a href="https://next-gpt.github.io/">[Code | 3.4k 🌟]</a><a href="https://arxiv.org/pdf/2309.05519.pdf">[pdf]</a>
-                    </li>
-                    <li>
-                      Hao Fei, <strong>Shengqiong Wu</strong>, Wei Ji, Hanwang Zhang, Meishan Zhang, Mong-Li Lee, Wynne Hsu.&nbsp&nbsp<em>Video-of-Thought: Step-by-Step Video Reasoning from Perception to Cognition</em>. In Proceedings of <strong>ICML</strong>. 2024.&nbsp&nbsp (Oral) <a href="https://github.com/scofield7419/Video-of-Thought">[Code]</a><a href="https://haofei.vip/downloads/papers/VoT_2024.pdf">[pdf]</a> 
-                    </li>
-                    
-                    <li>
-                      Hao Fei, <strong>Shengqiong Wu</strong>, Wei Ji, Hanwang Zhang, Tat-Seng Chua.&nbsp&nbsp<em>Dysen-VDM: Empowering Dynamics-aware Text-to-Video Diffusion with LLMs</em>. In Proceedings of <strong>CVPR</strong>. 2024.&nbsp&nbsp<a href="https://haofei.vip/Dysen-VDM/">[Code]</a><a href="https://arxiv.org/pdf/2308.13812">[pdf]</a>
-                    </li>
-                    </ul>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="100%"><strong>2023</strong></td>
-              </tr>
-              <tr>
-                <td width="100%">
-                <ul>
-                  
-                  <li>
-                    <strong>Shengqiong Wu</strong>, Hao Fei, Hanwang Zhang, Tat-Seng Chua.&nbsp&nbsp<em>Imagine That! Abstract-to-Intricate Text-to-Image Synthesis with Scene Graph Hallucination Diffusion</em>. In Proceedings of <strong>NeurIPS</strong>. 2023.&nbsp&nbsp(long, poster)&nbsp&nbsp<a href="https://github.com/ChocoWu/T2I-Salad">[Code]</a><a href="https://openreview.net/forum?id=hSTaTBIUCj">[pdf]</a>
-                  </li>
-                  <li>
-                    Leigang Qu*, <strong>Shengqiong Wu*</strong>, Hao Fei, Liqiang Nie, Tat-Seng Chua.&nbsp&nbsp<em>LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation</em>. In Proceedings of <strong>ACM MM</strong>. 2023.&nbsp&nbsp(*: equal contribution, long)&nbsp&nbsp<a href="https://layoutllm-t2i.github.io/">[Code]</a><a href="https://arxiv.org/pdf/2308.05095.pdf">[pdf]</a>
-                  </li>
-                  <li>
-                    Bobo Li, Hao Fei, Yuhan Wu, Jinsong Zhang, <strong>Shengqiong Wu</strong>, Jingye Li, Yijiang Liu, Lizi Liao, Tat-Seng Chua, Fei Li, Donghong Ji.&nbsp&nbsp<em>DiaASQ: A benchmark of conversational aspect-based sentiment quadruple analysis</em>.In Proceedings of <strong>ACL</strong>. 2023.&nbsp&nbsp(long, poster)&nbsp&nbsp<a href="https://github.com/unikcc/DiaASQ">[Code]</a><a href="https://aclanthology.org/2023.findings-acl.849.pdf">[pdf]</a>
-                  </li>
-                  <li>
-                    <strong>Shengqiong Wu</strong>, Hao Fei, Yixin Cao, Lidong Bing, Tat-Seng Chua.&nbsp&nbsp<em>Information Screening whilst Exploiting! Multimodal Relation Extraction with Feature Denoising and Multimodal Topic Modeling</em>. In Proceedings of <strong>ACL</strong>. 2023.&nbsp&nbsp(long, poster, paper award nomination, 1.6%)&nbsp&nbsp<a href="https://github.com/ChocoWu/MRE-ISE">[Code]</a><a href="https://aclanthology.org/2023.acl-long.823.pdf">[pdf]</a>
-                  </li>
-                  <li>
-                   <strong>Shengqiong Wu</strong>, Hao Fei, Wei Ji, Tat-Seng Chua.&nbsp&nbsp<em>Cross2StrA: Unpaired Cross-lingual Image Captioning with Cross-lingual Cross-modal Structure-pivoted Alignment</em>. In Proceedings of <strong>ACL</strong>. 2023.&nbsp&nbsp(long, oral)&nbsp&nbsp<a href="https://aclanthology.org/2023.acl-long.146.pdf">[pdf]</a>
-                  </li>
-                </ul>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="100%"><strong>2022</strong></td>
-              </tr>
-              <tr>
-                <td width="100%">
-                <ul>
-                  <li>
-                    Hao Fei, <strong>Shengqiong Wu</strong>, Jingye Li, Bobo Li, Fei Li, Libo Qin, Meishan Zhang, Min Zhang, Tat-Seng Chua.&nbsp&nbsp<em>LasUIE: Unifying information extraction with latent adaptive structure-aware generative language model</em>. In Proceedings of <strong>NeurIPS</strong>. 2022.&nbsp&nbsp(long, poster) <a href="https://github.com/ChocoWu/LasUIE">[Code]</a><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/63943ee9fe347f3d95892cf87d9a42e6-Paper-Conference.pdf">[pdf]</a>
-                  </li>
-                  <li>
-                    Shunjie Chen, Xiaochuan Shi, Jingye Li, <strong>Shengqiong Wu</strong>, Hao Fei, Fei Li, Donghong Ji.&nbsp&nbsp<em>Joint Alignment of Multi-Task Feature and Label Spaces for Emotion Cause Pair Extraction</em>. In Proceedings of <strong>COLING</strong>. 2022.&nbsp&nbsp(long, poster) <a href="https://github.com/csj199813/A2Net_ECPE">[Code]</a><a href="https://arxiv.org/abs/2209.04112">[pdf]</a>
-                  </li>
-                  <li>
-                    Hu Cao, Jingye Li, Fangfang Su, Fei Li, Hao Fei, <strong>Shengqiong Wu</strong>, Bobo Li, Liang Zhao and Donghong Ji.&nbsp&nbsp<em>OneEE: A One-Stage Framework for Fast Overlapping and Nested Event Extraction</em>. In Proceedings of <strong>COLING</strong>. 2022.&nbsp&nbsp(long, oral) <a href="https://github.com/Cao-Hu/OneEE">[Code]</a><a href="https://arxiv.org/abs/2209.02693">[pdf]</a>
-                  </li>
-                  <li>
-                    <strong>Shengqiong Wu</strong>, Hao Fei, Fei Li, Meishan Zhang, Yijiang Liu, Chong Teng, Donghong Ji.&nbsp&nbsp<em>Mastering the Explicit Opinion-Role Interaction: Syntax-Aided Neural Transition System for Unified Opinion Role Labeling</em>. In Proceedings of <strong>AAAI</strong>. 2022.&nbsp&nbsp(long, online) <a href="https://github.com/ChocoWu/SyPtrTrans-ORL">[Code]</a><a href="https://ojs.aaai.org/index.php/AAAI/article/view/21404">[pdf]</a>
-                  </li>
-                  <li>
-                    Jingye Li, Hao Fei, Jiang Liu, <strong>Shengqiong Wu</strong>, Meishan Zhang, Chong Teng, Donghong Ji, Fei Li.&nbsp&nbsp<em>Unified named entity recognition as word-word relation classification</em>. In Proceedings of <strong>AAAI</strong>. 2022.&nbsp&nbsp(long, online) <a href="https://github.com/ljynlp/W2NER">[Code]</a><a href="https://ojs.aaai.org/index.php/AAAI/article/view/21344">[pdf]</a>
-                  </li>
-                </ul>
-                </td>
-              </tr>
-
-
-              <tr>
-                <td width="100%"><strong>2021</strong></td>
-              </tr>
-              <tr>
-                <td width="100%"><ul>
-                  <li>
-                    <strong>Shengqiong Wu</strong></u>, Hao Fei,  Yafeng Ren, Donghong Ji, Jingye Li.&nbsp&nbsp<em>Learn from Syntax: Improving Pair-wise Aspect and Opinion Terms Extraction with Rich Syntactic Knowledge</em>. In Proceedings of <strong>IJCAI</strong>. 2021.&nbsp&nbsp(long, online) <a href="https://github.com/ChocoWu/Synfue-PAOTE">[Code]</a><a href="https://arxiv.org/pdf/2105.02520.pdf">[pdf]</a>
-                  </li>
-                  <li>
-                      <strong>Shengqiong Wu</strong>, Hao Fei, Yafeng Ren, Bobo Li, Fei Li and Donghong Ji.&nbsp&nbsp<em> High-order Pair-wise Aspectand Opinion Terms Extraction with Edge-enhanced Syntactic Graph Convolution</em>.  IEEE/ACM <strong>TASLP</strong>. 2021. <a href="https://github.com/ChocoWu/ESGCN-AOP">[Code]</a><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9478183">[pdf]</a>
-                  </li>
-                  <li>
-                    <strong>Shengqiong Wu</strong>, Bobo Li, Dongdong Xie, Chong Teng and Donghong Ji.&nbsp&nbsp<em>Neural Transition Model for Aspect-based Sentiment Triplet Extraction with Triplet Memory</em>. <strong>Neurocomputing</strong>. 2021.&nbsp&nbsp <a href="https://www.sciencedirect.com/science/article/pii/S0925231221011887">[pdf]</a>
-                  </li>
-                </ul>
-                </td>
-              </tr>
-
-
-              <tr>
-                <td width="100%"><strong>2020</strong></td>
-              </tr>
-              <tr>
-                <td width="100%"><ul>
-                  <li>
-                    <strong>ShengqiongWu</strong>, Hao Fei and Donghong Ji.&nbsp&nbsp<em>Aggressive Language Detection with Joint Text Normalization via Adversarial Multi-task Learning</em>. In Proceedings of <b>NLPCC</b>. 2020.&nbsp&nbsp(long, oral) <a href="https://github.com/ChocoWu/ALD-TN">[Code]</a><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-60450-9_54">[pdf]</a>
-                  </li>
-                </ul></td>
-              </tr>
-
-
-              
-
-
-            </tbody>
-          </table>
-
-        <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
-
-
-        <!-- Academic Services -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: rgba(246, 249, 253, 0.878);">
+<section id="news" class="bg-light">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="section_title">
+              <h2 class="title">🔥NEWs🔥</h2>
+          </div>
+          <!-- NEWs -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgb(247, 248, 249);">
             <tr>
               <td width="100%" valign="middle">
-                <heading>Academic Services</heading><br><br>
-                <tr>
-                  <td width="100%"><strong>Conference Reviewer</strong></td>
-                </tr>
-                <tr>
-                  <td style="padding-left: 40px;" width="100%">
-                      NeurIPS-23/24, ICLR-24/25, ICML-24/25, CVPR-24/25, ACM MM-23/24, IJCAI-23/24, AAAI-24/25, ACL-23/24, WSDM-23, 
-                    </td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 4px;" width="100%"><strong>Journal Reviewer</strong></td>
-                </tr>
-                <tr>
-                  <td style="padding-left: 40px;" width="100%">
-                    <!-- <li> -->
-                      TOMM, IEEE/ACM TALLIP, IPM, KBS, Neurocomputing
-                    <!-- </li> -->
-                  </td>
-                </tr>
-                
-                <!-- <li> <b>[Conference Reviewer]</b> &nbsp&nbsp&nbsp&nbsp&nbsp WSDM-23, NeurIPS-23, ICLR-24, ICML-24, ACM MM-23/24, IJCAI-23/24, AAAI-24</li>
-                <li> <b>[Journal Reviewer]</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TOMM, IEEE/ACM TALLIP, IPM, KBS, Neurocomputing</li> -->
+                <li> <span style="color: red;">[NEW!-2025/03]</span> We release a <a href="https://github.com/yaotingwangofficial/Awesome-MCoT">MM-CoT</a> survey, welcom to star✨✨. </li>
+                <li> <span style="color: red;">[NEW!-2025/03]</span> 🐾 I will be a <em>volunteer</em> at ICLR 2025. One paper (<a href="https://sqwu.top/SeTok-web/">Setok</a>) is accpted by ICLR-25. Looking forward to meet you. </li>
+                <li> <span style="color: red;">[NEW!-2025/02]</span> Welcome to <a href="https://ssnlp-website.github.io/ssnlp25/">SSNLP-25</a>, Free Registration!!!</li>
+                <li> <span style="color: red;">[NEW!-2024/12]</span> 🥳 I maintain a github repo focusing on  <a href="https://github.com/ChocoWu/Awesome-Scene-Graph-Generation">Awesome-Scene-Graph-Generation-and-Application</a>. Welcome to check it out, contribute, and share any resources or insights related to scene graph generation!</li>
+                <li> <span style="color: red;">[NEW!-2024/12]</span> <a href="https://arxiv.org/abs/2412.11124">One paper</a> focusing on mitigating hallucination in MLLMs is accepted by AAAI-25!</li>
+                <li> <span style="color: red;">[NEW!-2024/08]</span> 🐾I’m excited to have the opportunity to be a <em>volunteer</em> at ACL 2024. Looking forward to being part of it!</li>
+                <li> <span style="color: red;">[NEW!-2024/08]</span> I have tried to build <a href="https://aistudio.baidu.com/projectdetail/8168280">NExT-GPT</a> in <a href="https://www.paddlepaddle.org.cn/">PaddlePaddle</a>, <a href="https://github.com/PaddlePaddle/PaddleNLP">PaddleNLP</a> and <a href="https://github.com/PaddlePaddle/PaddleMIX/tree/release/2.0/ppdiffusers">PPDiffusers</a>. Still working on it. 🤔🤔</li>
+                <li> <span style="color: red;">[NEW!-2024/05]</span> Congratulations! 🥳🥳🥳, two full papers are accpted in ICML-24, <a href="">NExT-GPT</a>  and  <a href="">Video-of-Thought</a> .</li>
+                <li> <span style="color: red;">[NEW!-2024/04]</span> We release Vitron (<a href="https://vitron-llm.github.io/">Demo</a>, <a href="http://haofei.vip/downloads/papers/Skywork_Vitron_2024.pdf">Paper</a> , <a href="https://github.com/SkyworkAI/Vitron">Code</a>), a universal pixel-level vision LLM designed for understanding, generating, segmenting, editing of both image and video. 🌟🌟</li>
+                <li> <span style="color: red;">[NEW!-2024/02]</span> One full paper is accepted by CVPR-24 about <a href="https://haofei.vip/Dysen-VDM/">Text-to-Video Generation</a>. Congrats to all my co-authors. </li>
+                <li> <span style="color: red;">[NEW!-2024/01]</span> I honor Baidu Scholarship (10 people worldwide). 🥳🥳🥳 </li>
+                <li> <span style="color: red;">[NEW!-2023/12]</span> I have successfully passed my Rearcsh-based QE, I am now a Ph.D. Candidate. 🥳🥳🥳  </li>
+                <li> <span style="color: red;">[NEW!-2023/11]</span> I'll join <a href="">Kunlun 2050 Research</a>  as a research intern, advised by <a href="https://yanshuicheng.info/">Prof. Yan</a>. 😆 </li>
+                <li> <span style="color: red;">[NEW!-2023/10]</span> We build <a href="https://next-gpt.github.io/">NExT-GPT</a>, a general-purpose any-to-any MLLM. 🌟 </li>
+                <li> <span style="color: red;">[NEW!-2023/09]</span> One full paper is accepted in <a href="https://neurips.cc/Conferences/2023">NeurIPS-23</a>, about <a href="https://openreview.net/pdf?id=hSTaTBIUCj">Intricate Text-to-image Generation</a>  based on Scene Graph. 🥳</li>
+                <li> <span style="color: red;">[NEW!-2023/07]</span> One full paper is accepted in <a href="https://www.acmmm2023.org/">ACM MM-23</a>, about <a href="https://arxiv.org/pdf/2308.05095.pdf">High-faithfull Text-to-image Generation</a> enhanced with layout.</li>
+                <li> <span style="color: red;">[NEW!-2023/05]</span> Two full papers is accepted in <a href='https://2023.aclweb.org/'>ACL-23</a>, about <a href='https://aclanthology.org/2023.acl-long.823.pdf'>Multimodal Relation Extraction</a> and <a href='https://aclanthology.org/2023.acl-long.146.pdf'>Image Captioning.</a></li>
+                <li> <span style="color: red;">[NEW!-2022/07]</span> I'm heading to <a href="https://www.comp.nus.edu.sg/">SoC NUS</a> to pursue my PhD—a new journey and fresh challenges await! 🙃</a></li>
               </td>
             </tr>
           </table>
-    
-
-          <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
-
-          <!-- Invited Talks -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>Invited Talks</heading>
-                <ol style="list-style-type: none;  padding-left: 0; margin-left: 0; margin-top: 20px;">
-                  <li> <b>[2024/01]</b> &nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://event.baai.ac.cn/activities/744">The Path to AGI: Achieving Modality Unification with NExT-GPT</a>. Qingyuan Talk.</li>
-                  <li> <b>[2023/12]</b> &nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://zhidx.com/p/406693.html">NExT-GPT: Any-to-Any Multimodal LLM</a>.  AI New Youth.</li>
-                  <li> <b>[2022/12]</b> &nbsp&nbsp&nbsp&nbsp&nbsp Deep Learning based Natural Language Processing: A Survey and Outlook.  Jianghan University, China.</li>
-                  <li> <b>[2021/10]</b> &nbsp&nbsp&nbsp&nbsp&nbsp Comparison of Aspect-based Sentiment Analysis based on span model and transition model.  Wuhan University, China.</li>
-                  <li> <b>[2021/05]</b> &nbsp&nbsp&nbsp&nbsp&nbsp Learn from Syntax: Improving Pair-wise Aspect and Opinion Terms Extraction with Rich Syntactic Knowledge.  CIPS, Youth Working Committee.</li>
-                </ol>
-              </td>
-            </tr>
-          </table>
+          </div>
+      </div>
+  </div>
+</section>
 
 
-        <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
 
-
-        <!-- Work Experience -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(246, 249, 253, 0.878);">
-          <tbody><tr>
-            <td width="100%" valign="middle">
-            <heading>Work Experience</heading>
-        
-            <table>
+<section id="publications">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="section_title">
+                <h2 class="title">Publications</h2>
+            </div>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: rgb(255, 255, 255);">
               <tbody>
                 <tr>
-                  <td width="90%">
-                      <br>
-                      Nov. 2023 - Jun. 2024 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Kunlun Skywork AI</b></a>, Singapore<br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2050 Research Intern <br>
-                        <!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>Crawl web-data related to financial stock. Construct knowledge graph for Smart Q&A. Employ graph database (Neo4j) for data storage.</i><br> -->
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Advisor: <a href="https://yanshuicheng.info/"> Shuicheng Yan, Director </a> <br>
-                  </td>
-      
-                  <td width="30%">
-                        <img src="images/kunlun.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
+                  <td width="100%"><strong>2025</strong></td>
                 </tr>
                 <tr>
-                    <td width="90%">
-                        <br>
-                        Jul. 2019 - Aug. 2019 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>China Merchants Bank</b></a>, Wuhan, China<br>
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Information Technology Department Intern <br>
-                          <!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>Crawl web-data related to financial stock. Construct knowledge graph for Smart Q&A. Employ graph database (Neo4j) for data storage.</i><br> -->
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Advisor: <a href="https://www.linkedin.com/in/%E5%8D%8E-%E6%BD%98-83949a110/?originalSubdomain=cn"> Hua Pan, General Manager </a> <br>
-                    </td>
-        
-                    <td width="30%">
-                          <img src="images/CMB.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                    </td>
+                  <td width="100%">
+                    <ul>
+                      <li>
+                        Yaoting Wang, <strong>Shengqiong Wu</strong>, Yuecheng Zhang, William Wang, Ziwei Liu, Jiebo Luo, Hao Fei, Shuicheng Yan.&nbsp&nbsp<em>Multimodal Chain-of-Thought Reasoning: A Comprehensive Survey</em>. <strong>arxiv</strong>. 2025.&nbsp&nbsp<a href="https://github.com/yaotingwangofficial/Awesome-MCoT">[Code]</a><a href="https://arxiv.org/abs/2503.12605">[pdf]</a>
+                      </li>
+                      <li>
+                        <strong>Shengqiong Wu</strong>, Hao Fei, Xiangtai Li, Jiayi Ji, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan.&nbsp&nbsp<em>Towards Semantic Equivalence of Tokenization in Multimodal LLM</em>. <strong>ICLR</strong>. 2025.&nbsp&nbsp<a href="https://chocowu.github.io/SeTok-web/">[Code]</a><a href="https://arxiv.org/pdf/2406.05127">[pdf]</a>
+                      </li>
+                      <li>
+                        <strong>Shengqiong Wu</strong>, Hao Fei, Liangming Pan, William Yang Wang, Shuicheng Yan, Tat-Seng Chua.&nbsp&nbsp<em>Combating Multimodal LLM Hallucination via Bottom-up Holistic Reasoning</em>. In Proceedings of <strong>AAAI</strong>. 2025.&nbsp&nbsp <a href="https://arxiv.org/abs/2412.11124">[pdf]</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td width="100%"><strong>2024</strong></td>
                 </tr>
                 <tr>
-                    <td width="90%">
-                        <br>
-                        Jul. 2018 - Nov. 2018 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>YITU</b></a>, ShangHai, China<br>
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Solution Engineer Intern <br>
-                          <!-- <i>Responsible for the deployment, upgrade, daily maintenance of products and equipment in the company's projects.</i><br> -->
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Advisor: <a herf='https://www.linkedin.com/in/%E6%B3%BD-%E9%82%93-4045b0157/'>Ze Deng</a><br>
-                    </td>
-        
-                    <td width="30%">
-                          <img src="images/yitu.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                    </td>
+                  <td width="100%">
+                    <ul>
+                      <li>
+                        Hao Fei, <strong>Shengqiong Wu</strong>, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan.&nbsp&nbsp<em>VITRON: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing</em>. In Proceedings of <strong>NeurIPS</strong>. 2024.&nbsp&nbsp<a href="https://vitron-llm.github.io/">[Code]</a><a href="https://haofei.vip/downloads/papers/Skywork_Vitron_2024.pdf">[pdf]</a>
+                      
+                      <li>
+                        Meng Luo, Hao Fei*, Bobo Li, <strong>Shengqiong Wu</strong>, Qian Liu, Soujanya Poria, Erik Cambria, Mong-Li Lee, Wynne Hsu.&nbsp&nbsp<em>PanoSent: A Panoptic Sextuple Extraction Benchmark for Multimodal Conversational Aspect-based Sentiment Analysis</em>. In Proceedings of <strong>ACM MM</strong>. 2024.&nbsp&nbsp (Oral).<a href="https://panosent.github.io/">[Code]</a><a href="https://www.arxiv.org/pdf/2408.09481">[pdf]</a>
+                      </li>
+                      <li>
+                        <strong>Shengqiong Wu</strong>, Hao Fei, Leigang Qu, Wei Ji, Tat-Seng Chua.&nbsp&nbsp<em>NExT-GPT: Any-to-Any Multimodal Large Language Model</em>. In Proceedings of <strong>ICML</strong>. 2024.&nbsp&nbsp (Oral) <a href="https://next-gpt.github.io/">[Code | 3.4k 🌟]</a><a href="https://arxiv.org/pdf/2309.05519.pdf">[pdf]</a>
+                      </li>
+                      <li>
+                        Hao Fei, <strong>Shengqiong Wu</strong>, Wei Ji, Hanwang Zhang, Meishan Zhang, Mong-Li Lee, Wynne Hsu.&nbsp&nbsp<em>Video-of-Thought: Step-by-Step Video Reasoning from Perception to Cognition</em>. In Proceedings of <strong>ICML</strong>. 2024.&nbsp&nbsp (Oral) <a href="https://github.com/scofield7419/Video-of-Thought">[Code]</a><a href="https://haofei.vip/downloads/papers/VoT_2024.pdf">[pdf]</a> 
+                      </li>
+                      
+                      <li>
+                        Hao Fei, <strong>Shengqiong Wu</strong>, Wei Ji, Hanwang Zhang, Tat-Seng Chua.&nbsp&nbsp<em>Dysen-VDM: Empowering Dynamics-aware Text-to-Video Diffusion with LLMs</em>. In Proceedings of <strong>CVPR</strong>. 2024.&nbsp&nbsp<a href="https://haofei.vip/Dysen-VDM/">[Code]</a><a href="https://arxiv.org/pdf/2308.13812">[pdf]</a>
+                      </li>
+                      </ul>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td width="100%"><strong>2023</strong></td>
+                </tr>
+                <tr>
+                  <td width="100%">
+                  <ul>
+                    
+                    <li>
+                      <strong>Shengqiong Wu</strong>, Hao Fei, Hanwang Zhang, Tat-Seng Chua.&nbsp&nbsp<em>Imagine That! Abstract-to-Intricate Text-to-Image Synthesis with Scene Graph Hallucination Diffusion</em>. In Proceedings of <strong>NeurIPS</strong>. 2023.&nbsp&nbsp(long, poster)&nbsp&nbsp<a href="https://github.com/ChocoWu/T2I-Salad">[Code]</a><a href="https://openreview.net/forum?id=hSTaTBIUCj">[pdf]</a>
+                    </li>
+                    <li>
+                      Leigang Qu*, <strong>Shengqiong Wu*</strong>, Hao Fei, Liqiang Nie, Tat-Seng Chua.&nbsp&nbsp<em>LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation</em>. In Proceedings of <strong>ACM MM</strong>. 2023.&nbsp&nbsp(*: equal contribution, long)&nbsp&nbsp<a href="https://layoutllm-t2i.github.io/">[Code]</a><a href="https://arxiv.org/pdf/2308.05095.pdf">[pdf]</a>
+                    </li>
+                    <li>
+                      Bobo Li, Hao Fei, Yuhan Wu, Jinsong Zhang, <strong>Shengqiong Wu</strong>, Jingye Li, Yijiang Liu, Lizi Liao, Tat-Seng Chua, Fei Li, Donghong Ji.&nbsp&nbsp<em>DiaASQ: A benchmark of conversational aspect-based sentiment quadruple analysis</em>.In Proceedings of <strong>ACL</strong>. 2023.&nbsp&nbsp(long, poster)&nbsp&nbsp<a href="https://github.com/unikcc/DiaASQ">[Code]</a><a href="https://aclanthology.org/2023.findings-acl.849.pdf">[pdf]</a>
+                    </li>
+                    <li>
+                      <strong>Shengqiong Wu</strong>, Hao Fei, Yixin Cao, Lidong Bing, Tat-Seng Chua.&nbsp&nbsp<em>Information Screening whilst Exploiting! Multimodal Relation Extraction with Feature Denoising and Multimodal Topic Modeling</em>. In Proceedings of <strong>ACL</strong>. 2023.&nbsp&nbsp(long, poster, paper award nomination, 1.6%)&nbsp&nbsp<a href="https://github.com/ChocoWu/MRE-ISE">[Code]</a><a href="https://aclanthology.org/2023.acl-long.823.pdf">[pdf]</a>
+                    </li>
+                    <li>
+                    <strong>Shengqiong Wu</strong>, Hao Fei, Wei Ji, Tat-Seng Chua.&nbsp&nbsp<em>Cross2StrA: Unpaired Cross-lingual Image Captioning with Cross-lingual Cross-modal Structure-pivoted Alignment</em>. In Proceedings of <strong>ACL</strong>. 2023.&nbsp&nbsp(long, oral)&nbsp&nbsp<a href="https://aclanthology.org/2023.acl-long.146.pdf">[pdf]</a>
+                    </li>
+                  </ul>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td width="100%"><strong>2022</strong></td>
+                </tr>
+                <tr>
+                  <td width="100%">
+                  <ul>
+                    <li>
+                      Hao Fei, <strong>Shengqiong Wu</strong>, Jingye Li, Bobo Li, Fei Li, Libo Qin, Meishan Zhang, Min Zhang, Tat-Seng Chua.&nbsp&nbsp<em>LasUIE: Unifying information extraction with latent adaptive structure-aware generative language model</em>. In Proceedings of <strong>NeurIPS</strong>. 2022.&nbsp&nbsp(long, poster) <a href="https://github.com/ChocoWu/LasUIE">[Code]</a><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/63943ee9fe347f3d95892cf87d9a42e6-Paper-Conference.pdf">[pdf]</a>
+                    </li>
+                    <li>
+                      Shunjie Chen, Xiaochuan Shi, Jingye Li, <strong>Shengqiong Wu</strong>, Hao Fei, Fei Li, Donghong Ji.&nbsp&nbsp<em>Joint Alignment of Multi-Task Feature and Label Spaces for Emotion Cause Pair Extraction</em>. In Proceedings of <strong>COLING</strong>. 2022.&nbsp&nbsp(long, poster) <a href="https://github.com/csj199813/A2Net_ECPE">[Code]</a><a href="https://arxiv.org/abs/2209.04112">[pdf]</a>
+                    </li>
+                    <li>
+                      Hu Cao, Jingye Li, Fangfang Su, Fei Li, Hao Fei, <strong>Shengqiong Wu</strong>, Bobo Li, Liang Zhao and Donghong Ji.&nbsp&nbsp<em>OneEE: A One-Stage Framework for Fast Overlapping and Nested Event Extraction</em>. In Proceedings of <strong>COLING</strong>. 2022.&nbsp&nbsp(long, oral) <a href="https://github.com/Cao-Hu/OneEE">[Code]</a><a href="https://arxiv.org/abs/2209.02693">[pdf]</a>
+                    </li>
+                    <li>
+                      <strong>Shengqiong Wu</strong>, Hao Fei, Fei Li, Meishan Zhang, Yijiang Liu, Chong Teng, Donghong Ji.&nbsp&nbsp<em>Mastering the Explicit Opinion-Role Interaction: Syntax-Aided Neural Transition System for Unified Opinion Role Labeling</em>. In Proceedings of <strong>AAAI</strong>. 2022.&nbsp&nbsp(long, online) <a href="https://github.com/ChocoWu/SyPtrTrans-ORL">[Code]</a><a href="https://ojs.aaai.org/index.php/AAAI/article/view/21404">[pdf]</a>
+                    </li>
+                    <li>
+                      Jingye Li, Hao Fei, Jiang Liu, <strong>Shengqiong Wu</strong>, Meishan Zhang, Chong Teng, Donghong Ji, Fei Li.&nbsp&nbsp<em>Unified named entity recognition as word-word relation classification</em>. In Proceedings of <strong>AAAI</strong>. 2022.&nbsp&nbsp(long, online) <a href="https://github.com/ljynlp/W2NER">[Code]</a><a href="https://ojs.aaai.org/index.php/AAAI/article/view/21344">[pdf]</a>
+                    </li>
+                  </ul>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td width="100%"><strong>2021</strong></td>
+                </tr>
+                <tr>
+                  <td width="100%"><ul>
+                    <li>
+                      <strong>Shengqiong Wu</strong></u>, Hao Fei,  Yafeng Ren, Donghong Ji, Jingye Li.&nbsp&nbsp<em>Learn from Syntax: Improving Pair-wise Aspect and Opinion Terms Extraction with Rich Syntactic Knowledge</em>. In Proceedings of <strong>IJCAI</strong>. 2021.&nbsp&nbsp(long, online) <a href="https://github.com/ChocoWu/Synfue-PAOTE">[Code]</a><a href="https://arxiv.org/pdf/2105.02520.pdf">[pdf]</a>
+                    </li>
+                    <li>
+                        <strong>Shengqiong Wu</strong>, Hao Fei, Yafeng Ren, Bobo Li, Fei Li and Donghong Ji.&nbsp&nbsp<em> High-order Pair-wise Aspectand Opinion Terms Extraction with Edge-enhanced Syntactic Graph Convolution</em>.  IEEE/ACM <strong>TASLP</strong>. 2021. <a href="https://github.com/ChocoWu/ESGCN-AOP">[Code]</a><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9478183">[pdf]</a>
+                    </li>
+                    <li>
+                      <strong>Shengqiong Wu</strong>, Bobo Li, Dongdong Xie, Chong Teng and Donghong Ji.&nbsp&nbsp<em>Neural Transition Model for Aspect-based Sentiment Triplet Extraction with Triplet Memory</em>. <strong>Neurocomputing</strong>. 2021.&nbsp&nbsp <a href="https://www.sciencedirect.com/science/article/pii/S0925231221011887">[pdf]</a>
+                    </li>
+                  </ul>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td width="100%"><strong>2020</strong></td>
+                </tr>
+                <tr>
+                  <td width="100%"><ul>
+                    <li>
+                      <strong>ShengqiongWu</strong>, Hao Fei and Donghong Ji.&nbsp&nbsp<em>Aggressive Language Detection with Joint Text Normalization via Adversarial Multi-task Learning</em>. In Proceedings of <b>NLPCC</b>. 2020.&nbsp&nbsp(long, oral) <a href="https://github.com/ChocoWu/ALD-TN">[Code]</a><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-60450-9_54">[pdf]</a>
+                    </li>
+                  </ul></td>
                 </tr>
               </tbody>
-          </table>
-        </td>
-      </tr>
-      </tbody></table>
+            </table>
+          </div>
+      </div>
+  </div>
+</section>
 
 
-      <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
+<section id="speakers" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="section_title">
+            <h2 class="title">Academic Services</h2>
+        </div>
+        <!-- Academic Services -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: rgba(247, 248, 249);">
+          <tr>
+            <td width="100%" valign="middle">
+              <tr>
+                <td width="100%"><strong>Conference Reviewer</strong></td>
+              </tr>
+              <tr>
+                <td style="padding-left: 40px;" width="100%">
+                    NeurIPS-23/24, ICLR-24/25, ICML-24/25, CVPR-24/25, ACM MM-23/24, IJCAI-23/24, AAAI-24/25, ACL-23/24, WSDM-23, 
+                  </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 4px;" width="100%"><strong>Journal Reviewer</strong></td>
+              </tr>
+              <tr>
+                <td style="padding-left: 40px;" width="100%">
+                    TOMM, IEEE/ACM TALLIP, IPM, KBS, Neurocomputing
+                </td>
+              </tr>
+              
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<section id="talks">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="section_title">
+            <h2 class="title">Invited Talks</h2>
+        </div>
+        <!-- Invited Talks -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgb(255, 255, 255);">
+          <tr>
+            <td width="100%" valign="middle">
+              <ol style="list-style-type: none;  padding-left: 0; margin-left: 0; margin-top: 20px;">
+                <li> <b>[2024/01]</b> &nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://event.baai.ac.cn/activities/744">The Path to AGI: Achieving Modality Unification with NExT-GPT</a>. Qingyuan Talk.</li>
+                <li> <b>[2023/12]</b> &nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://zhidx.com/p/406693.html">NExT-GPT: Any-to-Any Multimodal LLM</a>.  AI New Youth.</li>
+                <li> <b>[2022/12]</b> &nbsp&nbsp&nbsp&nbsp&nbsp Deep Learning based Natural Language Processing: A Survey and Outlook.  Jianghan University, China.</li>
+                <li> <b>[2021/10]</b> &nbsp&nbsp&nbsp&nbsp&nbsp Comparison of Aspect-based Sentiment Analysis based on span model and transition model.  Wuhan University, China.</li>
+                <li> <b>[2021/05]</b> &nbsp&nbsp&nbsp&nbsp&nbsp Learn from Syntax: Improving Pair-wise Aspect and Opinion Terms Extraction with Rich Syntactic Knowledge.  CIPS, Youth Working Committee.</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+    
 
+<section id="internships" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="section_title">
+            <h2 class="title">Internships</h2>
+        </div>
+        <!-- Internships -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(247, 248, 249);" >
+          <tbody>
+            <tr>
+              <td width="90%">
+                  <br>
+                  Nov. 2023 - Jun. 2024 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Kunlun Skywork AI</b></a>, Singapore<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2050 Research Intern <br>
+                    <!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>Crawl web-data related to financial stock. Construct knowledge graph for Smart Q&A. Employ graph database (Neo4j) for data storage.</i><br> -->
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Advisor: <a href="https://yanshuicheng.info/"> Shuicheng Yan, Director </a> <br>
+              </td>
+  
+              <td width="30%">
+                    <img src="images/kunlun.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+              </td>
+            </tr>
+            <tr>
+                <td width="90%">
+                    <br>
+                    Jul. 2019 - Aug. 2019 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>China Merchants Bank</b></a>, Wuhan, China<br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Information Technology Department Intern <br>
+                      <!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i>Crawl web-data related to financial stock. Construct knowledge graph for Smart Q&A. Employ graph database (Neo4j) for data storage.</i><br> -->
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Advisor: <a href="https://www.linkedin.com/in/%E5%8D%8E-%E6%BD%98-83949a110/?originalSubdomain=cn"> Hua Pan, General Manager </a> <br>
+                </td>
+    
+                <td width="30%">
+                      <img src="images/CMB.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                </td>
+            </tr>
+            <tr>
+                <td width="90%">
+                    <br>
+                    Jul. 2018 - Nov. 2018 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>YITU</b></a>, ShangHai, China<br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Solution Engineer Intern <br>
+                      <!-- <i>Responsible for the deployment, upgrade, daily maintenance of products and equipment in the company's projects.</i><br> -->
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Advisor: <a herf='https://www.linkedin.com/in/%E6%B3%BD-%E9%82%93-4045b0157/'>Ze Deng</a><br>
+                </td>
+    
+                <td width="30%">
+                      <img src="images/yitu.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="awards">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="section_title">
+            <h2 class="title">Honors & Awards</h2>
+        </div>
         <!-- honors and awards -->  
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgb(255, 255, 255);">
           <tbody><tr>
             <td width="100%" valign="middle">
-              <heading>Honors &amp; Awards</heading><br><br>
+              <li>[2025] &nbsp&nbsp Dean's Graduate Research Excellence Award. NUS. </li>
               <li>[2024] &nbsp&nbsp Google PhD Fellowship. Google.</li>
               <!-- <li>[2024] &nbsp&nbsp <a href="https://www.sohu.com/a/754077156_132450">Scholarship (Top 10 Global Recipients)</a>, Baidu.</li> -->
               <li>[2023] &nbsp&nbsp Research Achievement Award of SoC, NUS.</li>
@@ -433,16 +656,25 @@
               <li>[2017] &nbsp&nbsp National Encouragement Scholarship.</li>
             </td>
           </tr>
-          </tbody></table>
-        
-          <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+          
 
-
+<section id="education" class="bg-light"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="section_title">
+            <h2 class="title">Education</h2>
+        </div>
         <!-- Education -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(246, 249, 253, 0.878);">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgba(247, 248, 249);">
           <tbody><tr>
             <td width="100%" valign="middle">
-              <heading>Education</heading>
               <table>
                 <tbody>
                   <tr>
@@ -450,7 +682,6 @@
                         <br>
                         <strong>Aug. 2022 - Now</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  School of Computing, &nbsp <strong>National University of Singapore</strong>, &nbsp Singapore<br>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Ph.D. in Computer Science <br> 
-                        <!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp Sep. 2019 - Jun. 2022 expected. -->
                     </td>
                     <td width="10%">
                       <img src="images/NUS.png" width="90%" style="display: block; margin-left: auto; margin-right: auto;">
@@ -480,17 +711,19 @@
             </td>
           </tr>
           </tbody></table>
-      
-          
-          <hr style="width:100%; border: 0.7px dashed rgba(228, 228, 228, 0.878);">
+</section>
 
-
-
+<section id="skills">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="section_title">
+            <h2 class="title">Skills and MISC</h2>
+        </div>
         <!-- Skills and MISC -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="background-color: rgb(255, 255, 255);">
           <tbody><tr>
             <td width="100%" valign="middle">
-              <heading>Skills and MISC</heading><br><br>
               <li>
                 <b>Coding</b><br>
                 <img src="images/python.png">&nbsp&nbsp&nbsp&nbsp <img src="images/java.png">&nbsp&nbsp&nbsp&nbsp <img src="images/latex.png">&nbsp&nbsp&nbsp&nbsp <img src="images/markdown.png">&nbsp&nbsp&nbsp&nbsp <img src="images/html.png">&nbsp&nbsp&nbsp&nbsp <img src="images/css.png">&nbsp&nbsp&nbsp&nbsp <img src="images/js.png">&nbsp&nbsp&nbsp&nbsp <img src="images/ubuntu.png">...
@@ -507,22 +740,21 @@
             </td>
           </tr>
           </tbody></table>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<footer class="py-3 bg-dark">
+  <div class="container" style="text-align: center;">
+      <!--        <a href="https://twitter.com/to-be-confirmed"><i class="fa fa-twitter fa-2x"></i></a>-->
+      <!--        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>-->
+      <p><span style="color: rgb(255, 255, 255); ">Copyright &copy; me
+      </p>
+  </div>
+</footer>
 
-       <script type="text/javascript">
-          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-          try {
-            var pageTracker = _gat._getTracker("UA-7580334-1");
-            pageTracker._trackPageview();
-          } catch (err) {}
-        </script>
-        </td>
-    </tr>
-  </table>
 </body>
 
 </html>
