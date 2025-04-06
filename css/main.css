@@ -126,6 +126,8 @@ iframe {
 table {
   width: 100%;
   background-color: #f5f5f5;
+  border-collapse: separate; /* 注意：必须设置为 separate */
+  border-spacing: 0 10px; /* 设置“行之间”的垂直间隔为 10px */
 }
 
 th, td {
