@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs & temp
+*.log
+*.tmp
