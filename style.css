@@ -364,6 +364,11 @@ section { padding-top: var(--space); }
 .contact p { font-size: 17px; }
 .contact .big-mail { font-size: clamp(20px, 4vw, 26px); font-weight: 500; }
 
+/* ============================ VISITOR COUNTER (inside footer) ============================ */
+.visitors { color: var(--muted); font-size: 14px; }
+.visitors i { font-size: 12px; margin-right: 5px; color: var(--accent); }
+.visitors .sep { margin: 0 8px; opacity: .45; }
+
 /* ============================ FOOTER ============================ */
 .main footer {
   margin-top: var(--space);
@@ -371,6 +376,14 @@ section { padding-top: var(--space); }
   border-top: 1px solid var(--rule);
   color: var(--muted);
   font-size: 14px;
+}
+/* index footer: counter on the left, copyright on the right */
+.main footer.footer-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* ============================ RESPONSIVE ============================ */

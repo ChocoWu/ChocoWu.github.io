@@ -57,7 +57,7 @@
       <section id="contact" class="contact">
         <h2 class="section-title">Contact</h2>
         <p>I'm always glad to hear about potential collaborations.</p>
-        <p class="big-mail"><a href="mailto:shengqiongwu@gmail.com">{first_name}{last_name}@gmail.com</a></p>
+        <p class="big-mail"><a href="mailto:shengqiongwu@gmail.com">{first_name}.{last_name}@cs.ox.ac.uk</a></p>
         <p style="color:var(--muted);font-size:15px;">
           Department of Computer Science, University of Oxford &nbsp;·&nbsp;
           <a href="https://scholar.google.com/citations?user=RJJLKR0AAAAJ">Google Scholar</a> &nbsp;·&nbsp;
@@ -66,9 +66,20 @@
         </p>
       </section>
 
-      <footer>© Shengqiong Wu 2026 · Built with plain HTML &amp; CSS.</footer>
+      <footer class="footer-split">
+        <!-- Visitor counter (busuanzi: site-wide page views & unique visitors) -->
+        <span class="visitors">
+          <i class="fa-regular fa-eye"></i>
+          <span id="busuanzi_container_site_pv">Page views <span id="busuanzi_value_site_pv">…</span></span>
+          <span class="sep">·</span>
+          <span id="busuanzi_container_site_uv">Visitors <span id="busuanzi_value_site_uv">…</span></span>
+        </span>
+        <span>© Shengqiong Wu 2026 · Built with plain HTML &amp; CSS.</span>
+      </footer>
 
     </main>
   </div>
+  <!-- busuanzi page-view / visitor counter -->
+  <script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>
